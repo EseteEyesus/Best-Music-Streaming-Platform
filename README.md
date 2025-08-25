@@ -1,8 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Best Music Streaming Platform
 
-## Getting Started
+A modern, full-stack music streaming web app built with **Next.js**, **TypeScript**, and **Tailwind CSS**. It currently implements a functional audio player and a responsive UI, with more features planned.
 
-First, run the development server:
+---
+
+## 📸 Screenshots
+
+> Add your screenshots or GIFs here
+
+* Home page
+* Player controls (play/pause, next/prev, volume, repeat)
+
+---
+
+## ✨ Features (Implemented)
+
+* ✅ Audio player with:
+
+  * Play / Pause
+  * Previous / Next
+  * Volume control & mute
+  * Repeat toggle
+* ✅ Responsive layout using Tailwind CSS
+* ✅ Organized components and hooks for clean code structure
+* ✅ Icon set via `react-icons`
+
+---
+
+## 🧰 Tech Stack
+
+* **Framework:** Next.js (App Router) + React + TypeScript
+* **Styling:** Tailwind CSS
+* **Icons:** `react-icons`
+* **Audio:** Native HTML5 `<audio>` with React hooks
+* **Deployment:** Vercel (recommended)
+
+---
+
+## 🛠️ Getting Started
+
+### Prerequisites
+
+* Node.js **>= 18**
+* A package manager: **npm**, **pnpm**, or **yarn**
+
+### 1) Clone the repository
+
+```bash
+git clone https://github.com/EseteEyesus/Best-Music-Streaming-Platform.git
+cd Best-Music-Streaming-Platform
+```
+
+### 2) Install dependencies
+
+```bash
+npm install
+# or
+yarn
+# or
+pnpm install
+```
+
+### 3) Run the app in development
 
 ```bash
 npm run dev
@@ -10,27 +69,74 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The app will start on **[http://localhost:3000](http://localhost:3000)**.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 4) Build for production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build && npm start
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+Best-Music-Streaming-Platform/
+├─ public/                # Static assets (images, icons, fonts)
+├─ src/
+│  ├─ app/                # Next.js App Router routes
+│  ├─ components/         # Reusable UI components (Player, Controls, etc.)
+│  ├─ hooks/              # Custom React hooks
+│  ├─ lib/                # Utilities (helpers, api clients)
+│  ├─ styles/             # Tailwind CSS imports and styles
+│  └─ types/              # TypeScript types
+├─ package.json
+├─ tailwind.config.js      # Tailwind configuration
+├─ tsconfig.json
+├─ next.config.js
+└─ README.md
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🎧 Audio Player Details
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* **Controls:** Play, Pause, Previous, Next, Volume, Mute, Repeat
+* **Core logic:** React hooks tied to native `<audio>` element events
+* **UI:** Built with reusable components styled using Tailwind CSS
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🚀 Deployment (Vercel)
+
+1. Push your code to GitHub
+2. Go to **Vercel** → **New Project** → import your repo
+3. Deploy
+
+---
+
+## 🧩 Contributing
+
+1. Fork the repo
+2. Create a feature branch: `git checkout -b feat/your-feature`
+3. Commit changes: `git commit -m "feat: add your feature"`
+4. Push branch: `git push origin feat/your-feature`
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+MIT — feel free to use and modify. See `LICENSE` if present.
+
+---
+
+## 🙌 Acknowledgements
+
+* Next.js team & docs
+* React community
+* Tailwind CSS documentation
+* `react-icons` for iconography
