@@ -13,10 +13,9 @@ export default function Navbar() {
   const handleLogout = async () => {
     const result = await LogoutUser();
     if (!result?.error) {
-
-      router.push("/")
+      router.push("/");
     }
-  }
+  };
   return (
     <nav
       className="h-15 flex justify-between items-center px-6 fixed top-0 left-0
@@ -51,7 +50,7 @@ export default function Navbar() {
         </div>
       </div>
       <div className="flex items-center gap-8">
-        <div className="lg:flex hidden gap-2 text-secondary-text font-bold border-r-2 border-primary-text pr-6">
+        {/* <div className="lg:flex hidden gap-2 text-secondary-text font-bold border-r-2 border-primary-text pr-6">
           <a href="#" className="hover:text-primary-text">
             Premium
           </a>
@@ -61,7 +60,7 @@ export default function Navbar() {
           <a href="#" className="hover:text-primary-text">
             download
           </a>
-        </div>
+        </div> */}
         <div>
           {!loading && (
             <>
