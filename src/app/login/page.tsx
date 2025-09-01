@@ -6,6 +6,7 @@ import { useState } from "react";
 import loginUser from "@/lib/auth/loginUser";
 import { useRouter } from "next/navigation";
 import { supabase } from "@/lib/SupabaseCLient";
+export const dynamic = "force-dynamic";
 
 export default function Page() {
     const router = useRouter();
